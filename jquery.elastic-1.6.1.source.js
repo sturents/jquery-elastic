@@ -4,7 +4,6 @@
 *	@version						1.6.1
 *	@requires						Jquery 1.2.6+
 *	@author							Jan Jarfalk jan.jarfalk@unwrongest.com
-*	@licens							MIT License - http://www.opensource.org/licenses/mit-license.php
 */
 
 (function(jQuery){ 
@@ -37,9 +36,6 @@
 					maxheight	=	parseInt($textarea.css('max-height'),10) || Number.MAX_VALUE,
 					goalheight	=	0,
 					i 			=	0;
-				
-				// Opera returns max-height of -1 if not set
-				if (maxheight < 0) { maxheight = Number.MAX_VALUE; }
 					
 				// Append the twin to the DOM
 				// We are going to meassure the height of this, not the textarea.
@@ -50,7 +46,6 @@
 				while(i--){
 					$twin.css(mimics[i].toString(),$textarea.css(mimics[i].toString()));
 				}
-				
 				
 				// Sets a given height and overflow state on the textarea
 				function setHeightAndOverflow(height, overflow){
