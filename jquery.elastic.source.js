@@ -1,7 +1,7 @@
 /**
 *	@name							Elastic
 *	@descripton						Elastic is Jquery plugin that grow and shrink your textareas automaticliy
-*	@version						1.6.3
+*	@version						1.6.4
 *	@requires						Jquery 1.2.6+
 *
 *	@author							Jan Jarfalk
