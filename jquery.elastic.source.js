@@ -49,7 +49,7 @@
 				}
 				
 				var $textarea	=	jQuery(this),
-					$twin		=	jQuery('<div />').css({'position': 'absolute','display':'block','word-wrap':'break-word'}),
+					$twin		=	jQuery('<div />').css({'position': 'absolute','display':'none','word-wrap':'break-word'}),
 					lineHeight	=	parseInt($textarea.css('line-height'),10) || parseInt($textarea.css('font-size'),'10'),
 					minheight	=	parseInt($textarea.css('height'),10) || lineHeight*3,
 					maxheight	=	parseInt($textarea.css('max-height'),10) || Number.MAX_VALUE,
