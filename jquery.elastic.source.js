@@ -134,7 +134,7 @@
 				});
 				
 				// Update width of twin if browser or textarea is resized (solution for textareas with widths in percent)
-				$(document).bind('resize', setTwinWidth);
+				$(window).bind('resize', setTwinWidth);
 				$textarea.bind('resize', setTwinWidth);
 				
 				// Compact textarea on blur
