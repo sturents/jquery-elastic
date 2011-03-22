@@ -149,7 +149,7 @@
 				});
 				
 				// And this line is to catch the browser paste event
-				$textarea.live('input paste',function(e){ setTimeout( update, 250); });				
+				$textarea.bind('input paste',function(e){ setTimeout( update, 250); });				
 				
 				// Run update once when elastic is initialized
 				update();
