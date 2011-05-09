@@ -96,6 +96,8 @@
 				// This function will update the height of the textarea if necessary 
 				function update(forced) {
 					
+					console.log('update');
+					
 					// Get curated content from the textarea.
 					var textareaContent = $textarea.val().replace(/&/g,'&amp;').replace(/  /g, '&nbsp;').replace(/<|>/g, '&gt;').replace(/\n/g, '<br />');
 					
@@ -136,6 +138,7 @@
 				// Update width of twin if browser or textarea is resized (solution for textareas with widths in percent)
 				$(window).bind('resize', setTwinWidth);
 				$textarea.bind('resize', setTwinWidth);
+				$textarea.bind('update', update);
 				
 				// Compact textarea on blur
 				$textarea.bind('blur',function(){
