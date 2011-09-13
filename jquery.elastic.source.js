@@ -43,6 +43,8 @@
 			
 			return this.each( function() {
 				
+				console.log((this.type !== 'textarea'));
+				
 				// Elastic only works on textareas
 				if ( this.type !== 'textarea' ) {
 					return false;
@@ -90,10 +92,6 @@
 					var curratedHeight = Math.floor(parseInt(height,10));
 					if($textarea.height() !== curratedHeight){
 						$textarea.css({'height': curratedHeight + 'px','overflow':overflow});
-						
-						// Fire the custom event resize
-						$textarea.trigger('resize');
-						
 					}
 				}
 				
