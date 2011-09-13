@@ -42,9 +42,7 @@
 				];
 			
 			return this.each( function() {
-				
-				console.log((this.type !== 'textarea'));
-				
+
 				// Elastic only works on textareas
 				if ( this.type !== 'textarea' ) {
 					return false;
