@@ -11,7 +11,7 @@
 *	@licence						MIT License - http://www.opensource.org/licenses/mit-license.php
 */
 
-(function(jQuery){ 
+(function($){ 
 	jQuery.fn.extend({  
 		elastic: function() {
 		
@@ -75,7 +75,7 @@
 				
 				// Updates the width of the twin. (solution for textareas with widths in percent)
 				function setTwinWidth(){
-					curatedWidth = Math.floor(parseInt($textarea.width(),10));
+					var curatedWidth = Math.floor(parseInt($textarea.width(),10));
 					if($twin.width() !== curatedWidth){
 						$twin.css({'width': curatedWidth + 'px'});
 						
