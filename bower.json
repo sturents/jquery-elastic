@@ -1,0 +1,25 @@
+{
+  "name": "jquery-elastic",
+  "homepage": "http://jan.jarfalk.se/jquery-elastic/",
+  "authors": [
+    "Jan Järfalk <jan@jarfalk.se>"
+  ],
+  "description": "Elastic makes your textareas grow and shrink to fit it’s content.",
+  "main": "jquery.elastic.source.js",
+  "moduleType": [],
+  "keywords": [
+    "elastic",
+    "jquery",
+    "textareas",
+    "grow",
+    "shrink"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
